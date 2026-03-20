@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padma Teja | Portfolio</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Portfolio of Padma Teja - System Administrator and Cyber Security Enthusiast.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-dark text-slate-300 font-sans antialiased overflow-x-hidden selection:bg-accent selection:text-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 top-0 transition-all duration-300 bg-transparent py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center h-12">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="#" class="text-2xl font-bold tracking-tighter text-white hover:text-accent transition-colors">Port<span class="text-accent">folio.</span></a>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#contact" class="btn-hire">Hire Me</a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-white hover:text-accent focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-dark-card border-b border-slate-800 py-6 px-10">
+            <div class="flex flex-col space-y-4 items-center">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#skills" class="mobile-nav-link">Skills</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <a href="#resume" class="mobile-nav-link">Resume</a>
+                <a href="#contact" class="mobile-nav-link btn-hire-mobile">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section min-h-screen flex items-center justify-center relative pt-20 overflow-hidden">
+            <div class="hero-overlay"></div>
+            
+            <!-- Glow background -->
+            <div class="glow-1"></div>
+            <div class="glow-2"></div>
+
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    
+                    <!-- Text Content -->
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <span class="text-accent font-semibold tracking-widest uppercase text-sm mb-4 block">Welcome to my universe</span>
+                        <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+                            Hi, I'm <br>
+                            <span class="gradient-text">Padma Teja</span>
+                        </h1>
+                        <h2 class="text-2xl md:text-3xl text-slate-300 font-medium mb-8">
+                            <span class="typing-text">SysAdmin & Cyber Security Enthusiast</span>
+                        </h2>
+                        <p class="text-slate-400 text-lg mb-10 max-w-lg leading-relaxed">
+                            Passionate about System Administration, Cyber Security, and building effective automation solutions. Currently pursuing my B.Tech in CSE at LPU.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="#projects" class="btn-primary">View Work</a>
+                            <a href="#contact" class="btn-secondary">Contact Me</a>
+                        </div>
+                    </div>
+
+                    <!-- Image/3D Element Content -->
+                    <div class="relative flex justify-center lg:justify-end" data-aos="fade-left" data-aos-duration="1200">
+                        <div class="relative w-80 h-80 md:w-96 md:h-96 hero-image-wrapper group">
+                            <div class="hero-image-glow"></div>
+                            <div class="hero-image-border">
+                                <img src="https://ui-avatars.com/api/?name=Padma+Teja&size=512&background=0f172a&color=3b82f6" alt="Profile Picture" class="profile-pic">
+                            </div>
+
+                            <!-- Orbiting Elements -->
+                            <div class="orbit icon-python"><i class="fab fa-python"></i></div>
+                            <div class="orbit icon-security"><i class="fas fa-shield-alt"></i></div>
+                            <div class="orbit icon-linux"><i class="fab fa-linux"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Down Indicator -->
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 bg-dark">
+            <div class="container mx-auto px-6">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>About Me</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <div class="about-img-container">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Cyber Security" class="about-img">
+                            <div class="about-img-overlay"></div>
+                        </div>
+                    </div>
+                    
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="text-2xl font-bold text-white mb-6">System Administrator & Developer</h3>
+                        <p class="text-slate-400 mb-6 leading-relaxed">
+                            I am a determined and adaptable technologist currently pursuing my B.Tech in Computer Science and Engineering at Lovely Professional University.
+                        </p>
+                        <p class="text-slate-400 mb-8 leading-relaxed">
+                            My training encompasses Red Hat Linux system administration, network security, and custom shell scripting. I'm passionate about securing and optimizing systems logic.
+                        </p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <ul class="space-y-3">
+                                <li class="about-item"><i class="fas fa-chevron-right"></i> Linux (RedHat, Kali)</li>
+                                <li class="about-item"><i class="fas fa-chevron-right"></i> Python & Bash</li>
+                                <li class="about-item"><i class="fas fa-chevron-right"></i> C & C++</li>
+                            </ul>
+                            <ul class="space-y-3">
+                                <li class="about-item"><i class="fas fa-chevron-right"></i> Nmap & Metasploit</li>
+                                <li class="about-item"><i class="fas fa-chevron-right"></i> Java</li>
+                                <li class="about-item"><i class="fas fa-chevron-right"></i> MySQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-24 bg-darker">
+            <div class="container mx-auto px-6">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>My Skills</h2>
+                    <p>Technologies I work with every day</p>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <!-- Skills will be hardcoded here for static site -->
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                        <i class="fas fa-shield-alt text-accent"></i>
+                        <h4>Cyber Security</h4>
+                        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="fab fa-python text-accent"></i>
+                        <h4>Python</h4>
+                        <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                        <i class="fas fa-terminal text-accent"></i>
+                        <h4>Bash</h4>
+                        <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                        <i class="fas fa-code text-accent"></i>
+                        <h4>C/C++</h4>
+                        <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+                        <i class="fab fa-java text-accent"></i>
+                        <h4>Java</h4>
+                        <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+                        <i class="fab fa-html5 text-accent"></i>
+                        <h4>HTML/CSS</h4>
+                        <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-24 bg-dark">
+            <div class="container mx-auto px-6">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Featured Projects</h2>
+                    <p>Some things I've built recently</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&w=800&q=80" alt="Linux security">
+                            <div class="project-links">
+                                <a href="https://github.com/Padmateja-000/Security-Tool-Kit" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Linux System Automation & Security ToolKit</h3>
+                            <p>Developed an automation toolkit using Bash for system monitoring, maintenance, and security. Implemented disk storage monitoring with automated email alerts.</p>
+                            <span class="tech-stack">Bash, Cron, Linux</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80" alt="Intrusion Detection">
+                            <div class="project-links">
+                                <a href="https://github.com/Padmateja-000/SSH-Honeypot-and-Intrusion-Detection-System" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>SSH Honeypot and IDS</h3>
+                            <p>Deployed an SSH honeypot using Cowrie on Linux to simulate vulnerable services and capture unauthorized login attempts. Integrated firewall rules using iptables.</p>
+                            <span class="tech-stack">Bash, Linux, Cowrie, iptables</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12" data-aos="fade-up">
+                    <a href="https://github.com/Padmateja-000/" target="_blank" class="btn-github">
+                        View more on GitHub <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="py-24 bg-darker">
+            <div class="container mx-auto px-6">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>My Resume</h2>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    
+                    <!-- Education -->
+                    <div>
+                        <h3 class="resume-header" data-aos="fade-up"><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                                <span class="timeline-date">2023 - Present</span>
+                                <h4>B.Tech in CSE</h4>
+                                <span class="timeline-org">Lovely Professional University</span>
+                                <p>CGPA: 6.80 | Punjab, India</p>
+                            </div>
+                            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                                <span class="timeline-date">2021 - 2023</span>
+                                <h4>Intermediate - MPC</h4>
+                                <span class="timeline-org">Vamsi Jr College</span>
+                                <p>Percentage: 91 | Andhra Pradesh, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificates & Achievements -->
+                    <div>
+                        <h3 class="resume-header" data-aos="fade-up"><i class="fas fa-trophy"></i> Highlights</h3>
+                        <div class="space-y-6">
+                            <div class="highlight-card" data-aos="fade-left" data-aos-delay="100">
+                                <i class="fas fa-certificate"></i>
+                                <div>
+                                    <h4>TryHackMe - Top 4% Globally</h4>
+                                    <p>Ranked among top 4% of 4M+ participants. 125+ rooms completed.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-card" data-aos="fade-left" data-aos-delay="200">
+                                <i class="fas fa-award"></i>
+                                <div>
+                                    <h4>Google Cybersecurity Certificate</h4>
+                                    <p>Professional certification by Google on Coursera.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 bg-dark">
+            <div class="container mx-auto px-6">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Get In Touch</h2>
+                    <p>Have a project in mind or just want to say hi?</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 max-w-5xl mx-auto">
+                    <div class="lg:col-span-2 space-y-6">
+                        <div class="contact-info-card" data-aos="fade-right">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>work.padmateja@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-card" data-aos="fade-right" data-aos-delay="100">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Phagwara, Punjab</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-3" data-aos="fade-left">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container mx-auto px-6 text-center">
+            <a href="#" class="text-3xl font-bold tracking-tighter text-white">Port<span class="text-accent">folio.</span></a>
+            <p class="mt-4 text-slate-400">Building digital products, brands, and experience.</p>
+            <div class="flex justify-center space-x-6 mt-8">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fas fa-shield-alt"></i></a>
+            </div>
+            <div class="mt-12 pt-8 border-t border-slate-800 text-sm text-slate-500">
+                <p>&copy; 2026 Portfolio. All rights reserved.</p>
+                <p class="mt-2">Modern Static Portfolio</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
